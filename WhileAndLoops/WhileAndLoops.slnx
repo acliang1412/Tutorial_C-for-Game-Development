@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Tutorial_Functions.vcxproj" Id="76ddb1f0-6200-4f0b-ab15-5b00c4e6867b" />
+  <Project Path="WhileAndLoops.vcxproj" />
 </Solution>
