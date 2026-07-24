@@ -14,6 +14,7 @@ const float WalkSpeed = 500.f;
 const float CrouchSpeed = 350.f;
 
 void UpdateMovementSpeed(PlayerStatus P_Status, float& speed);
+void SwitchOnInt(int i);
 
 int main()
 {
@@ -25,23 +26,41 @@ int main()
 
 	cout << "MovementSpeed = " << MovementSpeed << endl;
 
-
+	int integer = 99;
+	SwitchOnInt(integer);
 
 	system("pause");
 }
 
 void UpdateMovementSpeed(PlayerStatus P_Status, float& speed)
 {
-	if (P_Status == PS_Running)
+	switch (P_Status)
 	{
+	case PS_Running:
 		speed = RunSpeed;
-	}
-	else if (P_Status == PS_Walking)
-	{
+		break;
+	case PS_Walking:
 		speed = WalkSpeed;
-	}
-	else if (P_Status == PS_Crouching)
-	{
+		break;
+	case PS_Crouching:
 		speed = CrouchSpeed;
+	}
+}
+
+void SwitchOnInt(int i)
+{
+	switch (i)
+	{
+	case 0:
+		cout << "Your number was zero. \n";
+		break;
+	case 1:
+		cout << "Your number was one. \n";
+		break;
+	case 2:
+		cout << "Your number was two. \n";
+		break;
+	default:
+		cout << "Your number was not 0-2. \n";
 	}
 }
