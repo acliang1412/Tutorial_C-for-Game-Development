@@ -1,12 +1,19 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main()
 {
 
-	char MyCString[5] = { 'D', 'o', 'g', 's', '\0' };
+	string MyString;
+	MyString = "My Dog name is: ";
+	string first = "Spot ";
+	string last = "Jones";
 
-	cout << MyCString << endl;
+	MyString += (first + last);
+	//MyString += last;
+
+	cout << MyString << endl;
 
 	system("pause");
 }
