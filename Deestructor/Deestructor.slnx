@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Deestructor.vcxproj" Id="24f62ed6-0ee4-4a6d-bb7c-471a194a20f4" />
+</Solution>
